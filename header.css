@@ -1,0 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    background-color: theme-color !important;
+}
+.nav-underline img{
+    height: 40px !important;
+}
+main{
+    margin-top: 64px !important;
+    max-width: 992px !important;
+}
+main .input-group{
+    max-width: fit-content;
+    margin-top: 84px !important;
+}
