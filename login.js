@@ -1,6 +1,6 @@
 const base_url = "";
 if (localStorage.getItem('recordar') == "true") {
-    window.location.href = base_url + "index.php/Admin/inicio";
+    window.location.href = "dashboard.html";
 };
 
 function loginUser() {
@@ -28,7 +28,7 @@ function checkLogin(jsonLogin) {
                 localStorage.setItem("recordar", true);
                 localStorage.setItem("usuario", jsonLogin.usuario);
                 localStorage.setItem("contrasena", jsonLogin.contrasena);
-                window.location.href = base_url + "index.php/Admin/inicio";
+                window.location.href = "dashboard.html";
             }
         },
         error: function (jhrx, estado, errorA) {

@@ -20,7 +20,7 @@ function checkLogin(jsonLogin) {
         success: function (datos, estado, jhrx) {
             if (datos.Status == "False") {
                 localStorage.clear();
-                window.location.href = base_url + "index.php/Admin/";
+                window.location.href = "index.html";
             } else {
             }
         },
@@ -30,5 +30,5 @@ function checkLogin(jsonLogin) {
 }
 function close_session() {
     localStorage.clear();
-    window.location.href = base_url + "index.php/Admin/";
+    window.location.href = "index.html";
 }
